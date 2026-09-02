@@ -1,0 +1,52 @@
+/* Base page settings to center everything beautifully */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f172a; /* Dark sleek background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+/* --- THE CSS EFFECT START --- */
+.effect-btn {
+    position: relative;
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #38bdf8; /* Light blue text color */
+    background: transparent;
+    border: 2px solid #38bdf8;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* This creates a smooth 0.4 second delay transition for all properties */
+    transition: all 0.4s ease-in-out;
+}
+
+/* The actual magic effect: Changing colors and adding a glowing box-shadow on hover */
+.effect-btn:hover {
+    color: #ffffff;
+    background-color: #38bdf8;
+    box-shadow: 0 0 20px #38bdf8, 0 0 40px #0284c7;
+    transform: scale(1.05); /* Makes the button grow slightly bigger */
+}
