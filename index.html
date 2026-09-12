@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy Cinemas</title>
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://jsdelivr.net"></script>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+ </div>
+    </div>
+</nav>
+ <!-- JUMBOTRON / HEADER SECTION -->
+    <div class="p-5 mb-4 bg-transparent text-center text-white" style="margin-top: 80px;">
+        <h1 class="display-1 fw-bold tracking-wide" style="font-family: 'Brush Script MT', cursive, sans-serif; font-size: 6rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Academy Cinemas</h1>
+        <p class="fs-4 bg-dark bg-opacity-50 d-inline-block px-3 py-2 rounded">Posters, descriptions, and clickable movie times. There will also be a section to purchase tickets.</p>
+    </div>
+
+    <div class="container bg-white bg-opacity-75 rounded p-4 my-5">
+        <!-- NOW PLAYING SECTION -->
+        <h2 id="now-playing" class="text-center text-primary mb-4 display-4 fw-bold">Now Playing</h2>
+       
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Movie 1: Ben-Hur -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="./images/ben-hur.jpg" class="card-img-top" alt="Ben-Hur">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Ben-Hur</h5>
+                        <p class="card-text text-muted small">After a Jewish prince is betrayed and sent into slavery by a Roman friend in 1st-century Jerusalem, he regains his freedom and comes back for revenge.</p>
+                        <p class="card-text mb-1"><span class="fw-bold">Director:</span> William Wyler</p>
+                        <p class="card-text"><span class="fw-bold">Starring:</span> Charlton Heston | Jack Hawkins | Stephen Boyd</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 2: The Day the Earth Stood Still -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="./images/earth-stood-still.jpg" class="card-img-top" alt="The Day the Earth Stood Still">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">The Day the Earth Stood Still</h5>
+                        <p class="card-text text-muted small">An alien lands in Washington D.C. and tells the people of Earth that they must live peacefully or be destroyed as a danger to other planets.</p>
+                        <p class="card-text mb-1"><span class="fw-bold">Director:</span> Robert Wise</p>
+                        <p class="card-text mb-3"><span class="fw-bold">Starring:</span> Michael Rennie | Patricia Neal | Hugh Marlowe</p>
+                        <div class="mt-auto">
+                            <h6 class="fw-bold text-secondary border-top pt-2">Show Times</h6>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-info text-dark">10:00 AM</span>
+                                <span class="badge bg-info text-dark">11:30 AM</span>
+                                <span class="badge bg-info text-dark">1:10 PM</span>
+                                <span class="badge bg-info text-dark">2:30 PM</span>
+                                <span class="badge bg-info text-dark">4:50 PM</span>
+                                <span class="badge bg-info text-dark">6:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 3: Vertigo -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="./images/vertigo.jpg" class="card-img-top" alt="Vertigo">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Vertigo</h5>
+                        <p class="card-text text-muted small">A former San Francisco police detective juggles wrestling with his personal demons and becoming obsessed with the hauntingly beautiful woman he has been hired to trail...</p>
+                        <p class="card-text mb-1"><span class="fw-bold">Director:</span> Alfred Hitchcock</p>
+                        <p class="card-text mb-3"><span class="fw-bold">Starring:</span> James Stewart | Kim Novak | Barbara Bel Geddes</p>
+                        <div class="mt-auto">
+                            <h6 class="fw-bold text-secondary border-top pt-2">Show Times</h6>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-secondary">2:30 PM</span>
+                                <span class="badge bg-secondary">4:50 PM</span>
+                                <span class="badge bg-secondary">8:00 PM</span>
+                                <span class="badge bg-secondary">10:00 AM</span>
+                                <span class="badge bg-secondary">11:30 AM</span>
+                                <span class="badge bg-secondary">1:10 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TICKETS FORM SECTION -->
+        <div id="tickets" class="my-5 p-4 border rounded bg-light">
+            <h2 class="text-center text-warning fw-bold display-4 mb-4" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">Tickets</h2>
+            <form>
+                <div class="row g-3 justify-content-center text-center">
+                    <div class="col-md-3">
+                        <label class="form-label fw-bold text-secondary">Please Select a Movie</label>
+                        <select class="form-select text-center text-muted">
+                            <option selected>Select Movie</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label fw-bold text-secondary">Please select a show time</label>
+                        <select class="form-select text-center text-muted">
+                            <option selected>Select Time</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label fw-bold text-secondary">Please select number of tickets</label>
+                        <input type="number" class="form-control text-center" value="1">
+                    </div>
+                    <div class="col-12 mt-4">
+                        <button type="submit" class="btn btn-warning px-4 fw-bold shadow-sm">Buy Tickets</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- CONTACT US SECTION -->
+        <div id="contact" class="my-5">
+            <h2 class="text-center text-warning fw-bold display-4 mb-4" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">Contact Us!</h2>
+            <form class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3 row">
+                    <label class="col-sm-3 col-form-label fw-bold text-secondary text-sm-end">First Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-3 col-form-label fw-bold text-secondary text-sm-end">Last Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-3 col-form-label fw-bold text-secondary text-sm-end">Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label class="col-sm-3 col-form-label fw-bold text-secondary text-sm-end">Message</label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-warning px-4 fw-bold shadow-sm">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+<!--======= FOOTER =======-->
+<section>
+    <div class="container-fluid">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 footer-text">&copy; 2026 Academy Cinemas</p>
+
+            <img src="images/logo.png" class="col-md-4 footer-img" alt="Academy Cinemas logo">
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#now-playing" class="nav-link px-2 text-muted">Now Playing</a></li>
+                <li class="nav-item"><a href="#tickets" class="nav-link px-2 text-muted">Tickets</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link px-2 text-muted">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
+</section>
+
+</body>
+</html>
